@@ -34,6 +34,11 @@ public class BookController {
         return map;
     }
 
+    /**
+     * 查询接口
+     * @param key
+     * @return
+     */
     @GetMapping("/book/search")
     public Map<String, Object> search(String key) {
         final HashMap<String, Object> map = new HashMap<>();
